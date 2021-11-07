@@ -209,7 +209,8 @@ import scipy.ndimage as nd
 from scipy.stats import kurtosis  # pylint: disable=E0611
 
 DIETRICH_FACTOR = 1.0 / sqrt(2 / (4 - pi))
-FSL_FAST_LABELS = {"csf": 1, "gm": 2, "wm": 3, "bg": 0}
+# FSL_FAST_LABELS = {"csf": 1, "gm": 2, "wm": 3, "bg": 0}
+FSL_FAST_LABELS = {"csf": 1, "wm": 2, "gm": 3, "bg": 0}
 PY3 = version_info[0] > 2
 
 
